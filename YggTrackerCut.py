@@ -29,9 +29,11 @@ def login(session):
     r = session.post(
         f"{QBIT_URL}/api/v2/auth/login",
         data={"username": QBIT_USER, "password": QBIT_PASS},
+        headers={"Referer": QBIT_URL},
     )
-    r.raise_for_status()
-    if r.text.strip() != "Ok.":
+    # Les versions récentes renvoient 204 (corps vide), les anciennes 200 + "Ok."
+    has_session_cookie = any("SID" in name for name in session.cookies.get_dict())
+    if r.status_code not in (200, 204) or not has_session_cookie:
         raise RuntimeError("Échec de connexion à qBittorrent WebUI")
 
 
