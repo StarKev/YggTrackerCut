@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  yggtrackercut:
+    image: starkev/yggtrackercut:latest
+    container_name: yggtrackercut
+    restart: unless-stopped
+    network_mode: host   # nécessaire pour joindre qBittorrent via localhost
+    env_file:
+      - .env
