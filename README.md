@@ -4,8 +4,8 @@
 
 # YggTrackerCut
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/TON_PSEUDO/YggTrackerCut/releases)
-[![Platform](https://img.shields.io/badge/platform-Docker-lightgrey.svg)](https://hub.docker.com/r/TON_PSEUDO/yggtrackercut)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/starkev/YggTrackerCut/releases)
+[![Platform](https://img.shields.io/badge/platform-Docker-lightgrey.svg)](https://hub.docker.com/r/starkev/yggtrackercut)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -36,7 +36,7 @@
 - qBittorrent with **Web UI** enabled
 - Docker (or Python 3.12+ if run standalone)
 
-## Installation & Usage
+# Installation & Usage
 
 ### Option 1 — Docker (recommended)
 
