@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/YggTrackerCut.png" alt="YggTrackerCut logo" width="400">
+<img src="https://raw.githubusercontent.com/StarKev/YggTrackerCut/main/assets/YggTrackerCut.png" alt="YggTrackerCut logo" width="400">
 
 # YggTrackerCut
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/starkev/YggTrackerCut/releases)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/StarKev/YggTrackerCut/releases)
 [![Platform](https://img.shields.io/badge/platform-Docker-lightgrey.svg)](https://hub.docker.com/r/starkev/yggtrackercut)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -36,7 +36,7 @@
 - qBittorrent with **Web UI** enabled
 - Docker (or Python 3.12+ if run standalone)
 
-# Installation & Usage
+## Installation & Usage
 
 ### Option 1 — Docker (recommended)
 
@@ -50,7 +50,7 @@ docker run -d \
   -e TRACKER_MATCH="tracker.yggreborn.org" \
   -e THRESHOLD_MB="10" \
   -e CHECK_INTERVAL="10" \
-  TON_PSEUDO/yggtrackercut:latest
+  starkev/yggtrackercut:latest
 ```
 
 ### Option 2 — Docker Compose
@@ -123,7 +123,7 @@ docker run -d \
   -e TRACKER_MATCH="tracker.yggreborn.org" \
   -e THRESHOLD_MB="10" \
   -e CHECK_INTERVAL="10" \
-  TON_PSEUDO/yggtrackercut:latest
+  starkev/yggtrackercut:latest
 ```
 
 ### Option 2 — Docker Compose
